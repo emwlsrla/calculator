@@ -32,7 +32,9 @@ void push(Stack * stack, Item i)
 	if (stack->top>=stack->size-1)
 		reallocate(stack);
 	stack->contents[stack->top++] = i;
-	printf("--Pushded: %d\n", i);
+	printf("--Pushed: %d\n", i);
+
+	printf("202213071 김대영이 작성한 코드입니다.\n");
 }
 
 Item pop(Stack * stack)
